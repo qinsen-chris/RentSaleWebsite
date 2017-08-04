@@ -1,0 +1,75 @@
+14 七月 2017 10:03:49,856 INFO  ~ Starting D:\testplay\myfirstplay
+14 七月 2017 10:03:50,187 WARN  ~ You're running Play! in DEV mode
+14 七月 2017 10:03:50,271 INFO  ~ Listening for HTTP on port 8500 (Waiting a first request to start) ...
+14 七月 2017 10:04:59,234 ERROR ~ 
+
+@74jhlcmf6
+Internal Server Error (500) for request GET /@tests
+
+Oops: UnexpectedException
+An unexpected error occured caused by exception UnexpectedException: While applying class play.classloading.enhancers.ContinuationEnhancer on helpers.CheatSheetHelper$2
+
+play.exceptions.UnexpectedException: While applying play.CorePlugin@8e24743 on helpers.CheatSheetHelper$2
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:556)
+	at play.classloading.ApplicationClasses$ApplicationClass.enhance(ApplicationClasses.java:235)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:167)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:431)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:649)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: play.exceptions.UnexpectedException: While applying class play.classloading.enhancers.ContinuationEnhancer on helpers.CheatSheetHelper$2
+	at play.CorePlugin.enhance(CorePlugin.java:302)
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:551)
+	... 7 more
+Caused by: java.lang.RuntimeException: java.io.IOException: invalid constant type: 15
+	at javassist.CtClassType.getClassFile2(CtClassType.java:203)
+	at javassist.CtClassType.subtypeOf(CtClassType.java:303)
+	at javassist.CtClassType.subtypeOf(CtClassType.java:318)
+	at play.classloading.enhancers.ContinuationEnhancer.enhanceThisClass(ContinuationEnhancer.java:49)
+	at play.CorePlugin.enhance(CorePlugin.java:297)
+	... 8 more
+Caused by: java.io.IOException: invalid constant type: 15
+	at javassist.bytecode.ConstPool.readOne(ConstPool.java:1027)
+	at javassist.bytecode.ConstPool.read(ConstPool.java:970)
+	at javassist.bytecode.ConstPool.<init>(ConstPool.java:127)
+	at javassist.bytecode.ClassFile.read(ClassFile.java:693)
+	at javassist.bytecode.ClassFile.<init>(ClassFile.java:85)
+	at javassist.CtClassType.getClassFile2(CtClassType.java:190)
+	... 12 more
+14 七月 2017 10:06:06,101 ERROR ~ 
+
+@74jhlcmfg
+Internal Server Error (500) for request GET /
+
+Oops: UnexpectedException
+An unexpected error occured caused by exception UnexpectedException: While applying class play.classloading.enhancers.ContinuationEnhancer on helpers.CheatSheetHelper$2
+
+play.exceptions.UnexpectedException: While applying play.CorePlugin@8e24743 on helpers.CheatSheetHelper$2
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:556)
+	at play.classloading.ApplicationClasses$ApplicationClass.enhance(ApplicationClasses.java:235)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:167)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:431)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: play.exceptions.UnexpectedException: While applying class play.classloading.enhancers.ContinuationEnhancer on helpers.CheatSheetHelper$2
+	at play.CorePlugin.enhance(CorePlugin.java:302)
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:551)
+	... 7 more
+Caused by: java.lang.RuntimeException: java.io.IOException: invalid constant type: 15
+	at javassist.CtClassType.getClassFile2(CtClassType.java:203)
+	at javassist.CtClassType.subtypeOf(CtClassType.java:303)
+	at javassist.CtClassType.subtypeOf(CtClassType.java:318)
+	at play.classloading.enhancers.ContinuationEnhancer.enhanceThisClass(ContinuationEnhancer.java:49)
+	at play.CorePlugin.enhance(CorePlugin.java:297)
+	... 8 more
+Caused by: java.io.IOException: invalid constant type: 15
+	at javassist.bytecode.ConstPool.readOne(ConstPool.java:1027)
+	at javassist.bytecode.ConstPool.read(ConstPool.java:970)
+	at javassist.bytecode.ConstPool.<init>(ConstPool.java:127)
+	at javassist.bytecode.ClassFile.read(ClassFile.java:693)
+	at javassist.bytecode.ClassFile.<init>(ClassFile.java:85)
+	at javassist.CtClassType.getClassFile2(CtClassType.java:190)
+	... 12 more

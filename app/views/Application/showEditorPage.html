@@ -1,0 +1,34 @@
+
+#{extends 'main.html' /}
+#{set title:'queryUser' /}
+
+<link rel="stylesheet" src="/public/kindeditor/themes/default/default.css" />
+<script charset="utf-8" src="/public/kindeditor/kindeditor-all-min.js"></script>
+<script charset="utf-8" src="/public/kindeditor/kindeditor-all.js"></script>
+
+<div class="s_center">
+	<div style="padding-left:20px;">
+		<p class="s_bread"><a>首页</a><i>&gt;</i><span>编辑器页面</span></p>
+		<textarea id="editor_id" name="content" style="width:700px;height:300px;">
+		</textarea>
+	</div>
+	 <input type="button" value="test kindeditor!" onClick="showEditorContent()"  />  
+</div>
+
+
+<script type="text/javascript">
+	KindEditor.ready(function(K) {
+	    window.editor = K.create('#editor_id');
+	});
+	
+	function showEditorContent(){
+		//var content =  $('#editor_id').val();
+		var content = editor.html();
+		content =replaceAllHTML(content);
+		alert(content);
+	}
+</script>
+
+
+
+

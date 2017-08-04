@@ -1,0 +1,61 @@
+
+#{extends 'main.html' /}
+#{set title:'queryUser' /}
+<style type="text/css">
+	.clrinvest{background: #fafafa;}
+</style>
+
+<div class="s_center">
+	<p class="s_bread"><a>首页</a><i>&gt;</i><span>用户列表</span></p>
+	<div class="clr clrinvest">
+	<div class="s_lcleft">
+		
+	<div class="bidLists" style="background:#fff;">
+		<table>
+			#{if pageBean!=null}
+				#{list pageBean.page, as:'user'}  
+					<tr height="33">
+				   		<td>${user[0]}</td>
+				        <td>${user[1]} </td>
+				        <td>${user[2]}</td>
+				   	</tr>
+				#{/list}
+			#{/if}
+		</table>
+		<div class="s_list">
+			#{page currPage:pageBean.currPage,totalCount:pageBean.totalCount,pageSize:pageBean.pageSize,theme:2,style:5/}
+		</div>
+	</div>
+	
+	</div>
+	</div>
+	</div>
+
+<div class="s_options">
+	#{form @queryUser(),method:'POST',id :'userSearch'}
+	<input type="hidden" id="currPage" name="currPage"/>
+	<input type="hidden" id="pageSize" name="pageSize"/>
+	#{/form}
+</div>
+
+<!-- 上传图片 -->
+<div>
+  <input type="file" id="imgFile" name="imgFile"/>
+  <input type="button" onclick="uploadImage('imgFile','loanImage');" value="上传">
+</div>
+
+<img src="/images?uuid=e69f03b6-e8ee-44e4-a71d-5c5c4e5aa1d8",id:"loanImage",alt:"头像",width:"110px",height:"110px"/>
+
+
+<script type="text/javascript">
+
+function showPage(currPage, pageSize){
+    $("#currPage").val(currPage);
+    $("#pageSize").val(pageSize);
+    $("#userSearch").submit();
+}
+</script>
+
+
+
+

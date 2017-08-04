@@ -1,0 +1,23 @@
+
+				.bidLists{border-bottom: 1px solid #f0f0f0;border-left: 1px solid #f0f0f0;border-right: 1px solid #f0f0f0;}
+				.bidLists .s_list{margin-left: 20px;margin-top: 0px;margin-bottom: 30px;}
+				.bidLists .s_list .s_list_head h2{font-size: 16px;color: #181818;font-weight: normal;display: inline-block;line-height: 40px;}
+				.bidLists .s_list .s_list_head i{width: 60px;height: 18px;font-size: 12px;color: #ff5c03;border: 1px solid #fed9c9;border-radius: 3px; display: inline-block;margin-left: 10px;text-align: center;}
+				.bidLists .s_list ul{}
+				.bidLists .s_list ul li{float: left;width: 200px;text-align: center;}
+				.bidLists .s_list ul li>span{display: inline-block;line-height: 30px;}
+				.bidLists .s_list ul li>p{color: #b3b3b4;font-size: 12px;}
+				.bidLists .s_list ul li.expect{text-align: left;width: 160px;}
+				.bidLists .s_list ul li.expect>span{font-size: 14px;color: #ff5c03;}
+				.bidLists .s_list ul li.expect>span>b{font-size: 20px;}
+				.bidLists .s_list ul li.investTime{}
+				.bidLists .s_list ul li.speed{}
+				.bidLists .s_list ul li.speed>span{display: block;width: 100px;height: 2px;position: relative;background: #ccc;margin: 13px auto;}
+				.bidLists .s_list ul li.speed>span span{display: block;width: 10%;height: 2px;position: absolute;top: 0;left: 0;background: #fd823f;}
+				.bidLists .s_list ul li.btn{width: 200px;float: right;}
+				.bidLists .s_list ul li.btn>span{font-size: 12px;color: #3c3c3c;display:block;}
+				.bidLists .s_list ul li.btn a{display: block;width: 150px;height: 30px;background: #4c9ffe;font-size: 12px;color: #fff;line-height: 30px;margin: -5px auto 0;border-radius: 3px;}
+
+                .xinNoneBox{position:relative;}
+                .xinNoneBox img{display:block;margin:0 auto;margin-left:100px;}
+                .xinNoneBox span{margin-left:230px;position:absolute;top:75px;left:220px;font-size:16px;color:#a4a6a7;}
