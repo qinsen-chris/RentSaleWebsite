@@ -1,0 +1,9 @@
+logs
+.buildpath
+.project
+.settings
+.idea
+/tmp/
+/data/
+/test-result/
+/eclipse/classes/
