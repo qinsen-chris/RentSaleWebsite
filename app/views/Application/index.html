@@ -3,14 +3,14 @@
 
 <!--  #{welcome /}  -->
 <form action="@{Application.sayHello()}" method="POST">  
- <input type="text" name="myname" />   
- <input type="submit" value="Say hello!" />  
-
+ 	<input type="text" name="myname" />   
+ 	<input type="submit" value="Say hello!" />  
+	<a class="blue" href="@{loginAndRegisterAction.login()}">登录</a>
 
 </form>  
 
 <form action="@{Application.showEditorPage()}" method="GET">  
-   <input type="submit" value="test kindeditor!"  />  
+   	<input type="submit" value="test kindeditor!"  />  
 </form>
 
 
