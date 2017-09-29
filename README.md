@@ -15,12 +15,14 @@ PlayFramework 、JQuery、Ajax、MySql、Redis
 
 
 更新日志：
+
 1、生成play框架
 2、查询t_users
 3、实现分页功能
 4、上传图片
 5、用户登录
-6、富文本编辑器kindeditor  
+6、富文本编辑器kindeditor
+
 
 
 
